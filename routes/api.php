@@ -20,4 +20,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 $router->post('/order', 'OrderController@index');
 
-$router->post('/midtrans/notification', 'DonationController@notification');
+$router->post('/midtrans/notification', 'OrderController@notification');

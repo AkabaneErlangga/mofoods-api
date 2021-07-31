@@ -40,8 +40,8 @@ class SpaceCleanup extends Command
      */
     public function handle()
     {
-        Log::info("Cron is working fine!");
-        // Order::where('status','pending')->delete();
+        // Log::info("Cron is working fine!");
+        Order::where('status','pending')->delete();
         // $this->info('Successfully remove unused data');
     }
 }

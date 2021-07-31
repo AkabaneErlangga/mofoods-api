@@ -19,7 +19,7 @@ class CreateMenusTable extends Migration
             $table->string('nama')->nullable(false);
             $table->integer('harga')->nullable(false);
             $table->string('deskripsi')->nullable(false);
-            $table->string('gambar')->nullable(false);
+            $table->string('gambar');
             $table->boolean('isRecommended')->nullable(false);
             $table->boolean('isAvailable')->nullable(false);
             $table->timestamps();

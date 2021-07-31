@@ -36,8 +36,6 @@ class OrderController extends Controller
 
     public function notification(Request $request)
     {
-      \Midtrans\Config::$serverKey = config('services.midtrans.serverKey');
-      \Midtrans\Config::$isProduction = config('services.midtrans.isProduction');
         $notif = new \Midtrans\Notification();
 
         DB::transaction(function() use($notif) {
@@ -83,5 +81,10 @@ class OrderController extends Controller
         });
 
         return;
+    }
+
+    public function getOrderQueue(Request $request)
+    {
+      return Order::with('orderItem')->get();
     }
 }

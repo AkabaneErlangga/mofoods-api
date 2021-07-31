@@ -23,4 +23,4 @@ $router->get('/category-menu', 'MenuController@getCategoryMenu');
 
 $router->get('/menu-category', 'MenuController@getMenuCategory');
 
-$router->get('/notification', 'OrderController@notification');
+Route::get('/order-queue', 'OrderController@getOrderQueue');

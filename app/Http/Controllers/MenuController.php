@@ -9,11 +9,7 @@ class MenuController extends Controller
 {
     public function getMenu(Request $request)
     {
-        if ($request->id) {
-            return Menu::find($request->id);
-        }
-
-        return Menu::all();
+        return Menu::find($request->id);
     }
 
     public function getCategoryMenu(Request $request)

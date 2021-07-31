@@ -12,7 +12,8 @@
         "laravel/framework": "^8.40",
         "laravel/tinker": "^2.5",
         "midtrans/midtrans-php": "^2.4",
-        "pusher/pusher-php-server": "^7.0"
+        "pusher/pusher-php-server": "^7.0",
+        "fakerphp/faker": "^1.9.1",
     },
     "require-dev": {
         "facade/ignition": "^2.5",
